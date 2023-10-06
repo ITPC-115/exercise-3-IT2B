@@ -2,7 +2,7 @@
 
 1. Clone the activity from our GitHub repository using the HTTPS to your local folder.
 ``` bash
-git clone https://github.com/ITPC-115/exercise-3-IT2A.git
+git clone https://github.com/ITPC-115/exercise-3-IT2B.git
 ```
 2. Open the activity in Visual Studio Code.
 3. Open a terminal in VSCode `shift + Esc`
