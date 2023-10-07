@@ -18,12 +18,17 @@ while (!guesser)
     //const randomNumber = Math.floor(Math.random() * 100) + 1;
     const userGuess = parseInt(prompt("Guess a number between 1 and 100:"));
 
-    if (userGuess < 1 || userGuess > 100 || isNaN(userGuess)) {
+    if (userGuess < 1 || userGuess > 100 || isNaN(userGuess))
+    {
         alert("Please enter a valid number between 1 and 100.");
-    } else {
+    }
+    
+    else
+    {
         attempts++;
 
-        if (userGuess == randomNumber) {
+        if (userGuess == randomNumber)
+        {
             guesser = true;
             console.log(`Attempt no: ${attempts}, User Guess: ${userGuess}, Answer: ${randomNumber}`);
             alert(`Congratulations! You got it right.`);
