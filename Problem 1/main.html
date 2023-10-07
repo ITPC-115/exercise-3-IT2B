@@ -5,8 +5,8 @@
     <title>Problem 1</title>
         <style>
             * {margin: 0; padding: 0;}
-            body {background: black;}
-            canvas {display: block;}
+            body {background: black; font-family: "Lucida Console", "Courier New", monospace;}
+            canvas {display: block; font-family: "Lucida Console", "Courier New", monospace;}
         </style>
 </head>
     <body>    
@@ -47,7 +47,7 @@
         ctx.fillRect(0, 0, c.width, c.height);
         
         ctx.fillStyle = "#0F0"; //green text
-        ctx.font = font_size + "px arial";
+        ctx.font = font_size + "px Courier New";
         //looping over drops
         for(var i = 0; i < drops.length; i++)
         {
