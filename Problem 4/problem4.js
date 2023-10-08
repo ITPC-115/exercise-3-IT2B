@@ -37,7 +37,7 @@ for (let i = 0; i <= 10; i++)
     else
     {
         console.log(`${(2023 + i)} '${user.name}' ${user.age + i}`);
-        finalAge += i;
+        finalAge = age + i;
     }
     
     
