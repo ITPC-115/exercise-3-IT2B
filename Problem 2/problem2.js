@@ -5,4 +5,21 @@
     properties of the object. -- Make sure to incorprate the keyword this in here.
 */
 
+const product = {
+    name: 'Example Product',
+    brand: 'Example Brand',
+    price: 100,
+    color: 'Blue',
+    
+    displayProperties: function() {
+        console.log(`Name: ${this.name}`);
+        console.log(`Brand: ${this.brand}`);
+        console.log(`Price: $${this.price}`);
+        console.log(`Color: ${this.color}`);
+    }
+};
+
+product.displayProperties();
+
+
 
