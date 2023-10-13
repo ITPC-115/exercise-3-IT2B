@@ -7,3 +7,10 @@
     Constraints: The generated random number must be between 1 and 100 only.
 
 */
+const number = (Math.floor(Math.random() * 100) + 1);
+
+do{
+    var guessNumber = Number(window.prompt('Guess the number'));
+}while(guessNumber != number);
+
+console.log('Congratulations you got it right');
