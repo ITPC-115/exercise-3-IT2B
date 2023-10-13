@@ -7,3 +7,12 @@
     Constraints: The generated random number must be between 1 and 100 only.
 
 */
+
+alert("This is a guessing game \nYou should guess a random number.");
+var number = parseInt(window.prompt("Enter a number between 1-100 only: "));
+var guess = Math.floor(Math.random() * 100);
+
+do{
+    var guessNumber = Number(window.prompt('Guess the number'));
+}while(guessNumber != number);
+console.log('Congratulations you got it right');
