@@ -19,7 +19,18 @@
     2033 'Kim John Bautista' 34
 */
 
-const keyValue = 'age'
-// INSERT CODE HERE
+const keyValue = 'age';
+const g = new Object();
+g.myname = window.prompt('Enter your name: ');
+g.age = parseInt(window.prompt('Enter your age: '));
 
-alert(`You are {insert final age} years old after 10 years`);
+// INSERT CODE HERE
+let year = 2024;
+let holdmedaddy = g.age;
+for(let j=0; j<10; j++){
+    console.log(year, g.myname, holdmedaddy);
+    holdmedaddy++;
+    year++;
+}
+//FINAL NAGID
+alert("You are " + holdmedaddy + " years old after 10 years");
