@@ -6,3 +6,17 @@
 */
 
 
+const item = 
+{
+    name: 'MacBook Air',
+    brand: 'Apple',
+    price: 76000,
+    color: 'Gray',
+  
+    
+    displayProperties() {
+      console.log(`Name: ${this.name} Brand: ${this.brand} Price: ${this.price} Color: ${this.color}`);
+    }
+  };
+
+  item.displayProperties();
