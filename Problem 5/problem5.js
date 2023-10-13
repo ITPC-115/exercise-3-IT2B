@@ -7,3 +7,20 @@
     Constraints: The generated random number must be between 1 and 100 only.
 
 */
+
+let x = parseInt(window.prompt("Enter a number you want to guess"));
+const guess = Math.floor(Math.random() * 100);
+let counter = 0;
+while (x !== guess) {
+    if (x > guess) {
+        x = parseInt(window.prompt("Oooy! Mataas Masyado. \nEnter again: "));
+        counter++;
+    }
+    if (x < guess) {
+        x = parseInt(window.prompt("Oooy! Mababa Masyado. \nEnter again: "));
+        counter++;
+    }
+}
+if (x === guess) {
+    alert("You've entered " + counter + " times\nCongratulations Tama ka!, its " + guess);
+}
