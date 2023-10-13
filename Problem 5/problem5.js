@@ -23,4 +23,4 @@ while (x !== guess) {
 if (x === guess) {
     alert("You've entered " + counter + " times\nCongratulations you got it right, its " + guess);
 }
-//FINAL
+//FINAL NAGID

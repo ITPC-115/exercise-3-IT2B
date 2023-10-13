@@ -21,7 +21,7 @@ const array = [
     {name: "laptop",age: 54, sex: "Male"}
 ]
 
-//FINAL
+//FINAL NAGID
 
 for (const person of array){
     console.log(person.name, person.age, person.sex);

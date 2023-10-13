@@ -24,4 +24,4 @@ function DisplaythemAll_uwu(Object){
     let x = Object;
     console.log("Name: ", x.name, '\n', 'Brand: ', x.brand, '\n', 'Price: ' , x.price, '\n', 'Color: ' , x.color);
 }
-//FINAL
+//FINAL NAGID
