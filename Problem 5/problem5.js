@@ -7,3 +7,20 @@
     Constraints: The generated random number must be between 1 and 100 only.
 
 */
+let my = parseInt(window.prompt("Enter a number you want to guess"));
+const guess = Math.floor(Math.random() * 100);
+let num = 0;
+while (my !== guess) {
+    if (my > guess) {
+        my = parseInt(window.prompt("Oops!.. You're too high. \nEnter again: "));
+        num++;
+    }
+    if (my < guess) {
+        my = parseInt(window.prompt("Oops!.. You're too low. \nEnter again: "));
+        num++;
+    }
+}
+if (my === guess) {
+    alert("You've entered " + num + " times\nCongratulations you got it right, its " + guess);
+}
+//SHESH
