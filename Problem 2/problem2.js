@@ -5,4 +5,18 @@
     properties of the object. -- Make sure to incorprate the keyword this in here.
 */
 
+const item = 
+{
+    name: 'iPhone 15 Pro Max',
+    brand: 'Apple',
+    price: 84990,
+    color: 'Black Titanium',
+  
+    
+    displayProperties() 
+    {
+      console.log(`Name: ${this.name} Brand: ${this.brand} Price: ${this.price} Color: ${this.color}`);
+    }
+};
 
+    item.displayProperties();

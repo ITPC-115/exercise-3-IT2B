@@ -22,4 +22,13 @@
 const keyValue = 'age'
 // INSERT CODE HERE
 
-alert(`You are {insert final age} years old after 10 years`);
+const fullName = window.prompt('Enter your name');
+const initialAge = Number(window.prompt('Enter you age'));
+const person = {name: fullName, age: initialAge};
+
+for(let year = 2024; year < 2034; year++)
+{
+    person[keyValue]++;
+    console.log(year + ` '${person.name}' ${person[keyValue]}`);
+}
+alert(`You are ${person[keyValue]} years old after 10 years`);
