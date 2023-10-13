@@ -7,3 +7,19 @@
     Constraints: The generated random number must be between 1 and 100 only.
 
 */
+
+const min = 1;
+const max = 100;
+const randomNumber = Math.floor(Math.random() * (max - min + 1));
+
+var userGuess = Number(window.prompt('Guess the number (between 1 and 100):'));
+
+  do {
+    if (userGuess < randomNumber) {
+      userGuess = Number(window.prompt('Try higher:'));
+    } else if (userGuess > randomNumber) {
+      userGuess = Number(window.prompt('Try lower:'));
+    }
+  } 
+  while (userGuess !== randomNumber);
+  alert('Congratulations! You got it right');
