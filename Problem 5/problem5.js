@@ -7,3 +7,42 @@
     Constraints: The generated random number must be between 1 and 100 only.
 
 */
+
+const minNumber = 1;
+const maxNumber = 100;
+const randomNumber = Math.floor(Math.random() * (maxNumber - minNumber + 1)) + minNumber;
+
+console.log("Generated random number:", randomNumber);
+
+
+function startGuessingGame() {
+  let attempts = 0;
+
+  function guessNumber() {
+    const userGuess = parseInt(prompt("Guess the number between 1 and 100:"));
+
+    
+
+    attempts++;
+
+    if (userGuess === randomNumber) {
+      console.log("Congratulations, you got it right!");
+      console.log("Total attempts:", attempts);
+    } else if (isNaN(userGuess) || userGuess < minNumber || userGuess > maxNumber) {
+      alert("Please enter a valid number between 1 and 100.");
+      guessNumber();
+      return;
+    } else if (userGuess < randomNumber) {
+      alert("Try a higher number.");
+      guessNumber();
+    } else {
+      alert("Try a lower number.");
+      guessNumber();
+    }
+  }
+
+  guessNumber();
+}
+
+
+startGuessingGame();
