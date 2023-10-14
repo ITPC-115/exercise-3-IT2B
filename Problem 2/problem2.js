@@ -5,4 +5,14 @@
     properties of the object. -- Make sure to incorprate the keyword this in here.
 */
 
+let i = new Object();
+i.name = window.prompt(`Enter name: `);
+i.brand = prompt(`Enter brand: `);
+i.price = prompt(`Enter price: `);
+i.color = prompt(`Enter color: `);
 
+DisplayAll(i)
+
+function DisplayAll(i){
+    console.log(`Name: `, i.name, '\nBrand: ', i.brand, '\nPrice: ' , i.price, '\nColor: ' , i.color);
+}

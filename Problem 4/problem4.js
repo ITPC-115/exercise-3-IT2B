@@ -22,4 +22,25 @@
 const keyValue = 'age'
 // INSERT CODE HERE
 
-alert(`You are {insert final age} years old after 10 years`);
+let AGE = 0;
+let YEAR = '2023'
+
+const user = {
+    name: window.prompt(`Enter Name: `),
+    age: parseInt(window.prompt(`Enter Age: `)),
+};
+
+//===================================================
+for(let o = 0; o <= 10; o++){
+    if(o < 10){
+        console.log(`${(2023 + o)} '${user.name}' ${user.age + o}`);
+    }
+
+    else{
+        console.log(`${(2023 + o)} '${user.name}' ${user.age + o}`);
+        AGE = user.age + o;
+    }
+    
+    alert(`You are {insert final age} years old after 10 years`); 
+}
+
