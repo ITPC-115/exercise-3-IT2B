@@ -19,7 +19,26 @@
     2033 'Kim John Bautista' 34
 */
 
-const keyValue = 'age'
-// INSERT CODE HERE
+const keyValue = 'age';
 
-alert(`You are {insert final age} years old after 10 years`);
+let finalAge = 0;
+let year = '2023';
+const user = {
+    name: window.prompt('Enter Your Name'),
+    age: parseInt(window.prompt('Enter Your Age')),
+};
+
+for (let i = 0; i <= 10; i++)
+{
+    if(i < 10)
+    {
+        console.log(`${(2023 + i)} + ${user.name}+  ${user.age + i}`);
+    }
+    else
+    {
+        console.log(`${(2023 + i)} + ${user.name} + ${user.age + i}`);
+        finalAge = user.age + i;
+    }
+}
+
+alert(`You are ${finalAge} years old after 10 years`);
