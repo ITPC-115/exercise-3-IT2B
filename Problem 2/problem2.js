@@ -6,10 +6,10 @@
 */
 
 const product = {
-    name: 'Example Product',
-    brand: 'Example Brand',
+    name: 'Air Force 1',
+    brand: 'Nike',
     price: 100,
-    color: 'Blue',
+    color: 'Olive',
     
     displayProperties: function() {
         console.log(`Name: ${this.name}`);

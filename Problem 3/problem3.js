@@ -8,22 +8,24 @@
     My name is Kim John Bautista, second year student and 20 years old.
 */
 
-//const student = new Object();
-//const studentName =window.prompt('Enter Your Name');
-//const yearLevel = window.prompt('Enter Your Year Level (First, Second, Third, Fourth)');
-//const age = window.prompt('Enter Age');
-//const subjects = [{name: 'RE112', schedule: 'MWF'},{name:'SOSC143', schedule:'TTh'}];
-
+const studentName = window.prompt('Enter Your Name');
+const yearLevel = window.prompt('Enter Your Year Level (First, Second, Third, Fourth)').toUpperCase();
+let age = window.prompt('Enter Age');
+while (isNaN(parseInt(age)) || parseInt(age) <= 0) {
+    age = window.prompt('Invalid input. Please enter a valid age:');
+}
+const subjects = [{ name: 'RE112', schedule: 'MWF' }, { name: 'SOSC143', schedule: 'TTh' }];
 const student = {
     name: studentName,
-    yearLvl: yearLevel.toUpperCase(),
+    yearLvl: yearLevel,
     age: parseInt(age),
     subjects: subjects,
-    introduce: function() {
+    introduce: function () {
         console.log(`My name is ${this.name}, ${this.yearLvl} year student and ${this.age} years old.`);
     }
 };
 
 console.log(student);
 student.introduce();
+
 

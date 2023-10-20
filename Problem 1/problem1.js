@@ -23,9 +23,8 @@ const people = [
 
 ];
 
-
 for (let i = 0; i < people.length; i++) {
-    const person = people[i];
-    console.log(`${person.name} ${person.age} ${person.sex}`);
+    const user = people[i];
+    console.log(`${user.name} ${user.age} ${user.sex}`);
 }
 
