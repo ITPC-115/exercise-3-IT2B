@@ -9,9 +9,18 @@
 */
 
 const student = new Object();
-const studentName =window.prompt('Enter Your Name');
-const yearLevel = window.prompt('Enter Your Year Level (First, Second, Third, Fourth)');
-const age = window.prompt('Enter Age');
-const subjects = [{name: 'RE112', schedule: 'MWF'},{name:'SOSC143', schedule:'TTh'}];
 
+student.name = window.prompt(`Enter Name`);
+const yearLvlInput = window.prompt(`Enter Year Level (First, Second, Third, Fourth)`);
+student.yearLvl = yearLvlInput; 
+const ageInput = window.prompt(`Enter Age`);
+student.age = !isNaN(ageInput) ? parseInt(ageInput) : 0
+student.subjects = [{name: `ITPC115`, schedule: `SATURDAY`}, {name:`ITCC114`, schedule:`MONNDAY & WEDNESDAY`}];
+
+student.introduce = function() {
+    console.log(`My name is`, this.name + `,`, this.yearLvl.toLowerCase(), `year student and`, this.age, `years old.`);
+};
+
+console.log(student);
+student.introduce();
 
