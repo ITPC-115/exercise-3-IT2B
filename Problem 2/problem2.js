@@ -6,3 +6,18 @@
 */
 
 
+const product = {
+    name: 'Pencil',
+    brand: 'Monggol',
+    price: 10,
+    color: 'Yellow',
+    
+    displayProperties: function() {
+        console.log(`Name: ${this.name}`);
+        console.log(`Brand: ${this.brand}`);
+        console.log(`Price: ${this.price}`);
+        console.log(`Color: ${this.color}`);
+    }
+};
+
+product.displayProperties();
