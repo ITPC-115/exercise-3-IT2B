@@ -23,6 +23,7 @@ student.introduce = function()
     console.log(`My name is ${this.name}, ${this.yearLvl} year student and ${this.age} years old.`);
 };
 
+
 console.log(student);
 
 student.introduce();
