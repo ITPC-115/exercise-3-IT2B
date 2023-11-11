@@ -28,7 +28,7 @@ const user = {
     age: parseInt(window.prompt('Enter Your Age')),
 };
 
-for (let i = 0; i <= 10; i++)
+for (let i = 1; i <= 10; i++)
 {
     if(i < 10)
     {
